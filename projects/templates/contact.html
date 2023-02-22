@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load static %}  <!-- Add this line to load the static template library -->
+
+{% block page_content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header" style="background: transparent;">Let me help you build things</div>
+                <div class="card-body">
+                    <div class="text-center">
+                        <a href="https://github.com/yueyin97"><img src="{% static 'img/github.png' %}" alt="Github" style="height: 50px; width: 50px; margin-right: 25px;"></a>
+                        <a href="https://linkedin.com/in/yue-yin-3b3a62156"><img src="{% static 'img/linkedin.png' %}" alt="LinkedIn" style="height: 50px; width: 50px; margin-right: 25px;"></a>
+                        <a href="mailto:yueyin600@gmail.com"><img src="{% static 'img/gmail.png' %}" alt="Email" style="height: 44px; width: 50px; margin-right: 25px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
